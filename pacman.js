@@ -8,6 +8,11 @@ function letsPlay(){
   yCoor = 0
   direction = ""
 
+  move()
+  left()
+  move()
+  move()
+
   direction = prompt("Please enter starting direction. Eg east")
   xCoor = Number(prompt("Please enter X coordinate"))
   yCoor = Number(prompt("Please enter Y coordinate"))
@@ -77,4 +82,18 @@ function right() {
   console.log(direction)
 
   return direction
+}
+
+function result() {
+  if ((xCoor < 0) || (yCoor < 0)) {
+    alert("Pacman has fallen off :(")
+  }
+
+  else if ((xCoor > 5) || (yCoor > 5)) {
+    alert("Pacman has fallen off :(")
+  }
+
+  else {
+    return alert(`your grid position is ${xCoor},${yCoor}`)
+  }
 }
