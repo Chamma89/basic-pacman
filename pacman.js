@@ -14,3 +14,46 @@ function letsPlay(){
 }
 
 
+function left() {
+  if (direction == "north") {
+    direction = "west"
+  }
+
+  else if (direction == "south") {
+    direction = "east"
+  }
+
+  else if (direction == "east") {
+    direction = "north"
+  }
+
+  else if (direction == "west") {
+    direction = "south"
+  }
+
+  console.log(direction)
+
+  return direction
+}
+
+function right() {
+  if (direction == "north") {
+    direction = "east"
+  }
+
+  else if (direction == "south") {
+    direction = "west"
+  }
+
+  else if (direction == "east") {
+    direction = "south"
+  }
+
+  else if (direction == "west") {
+    direction = "north"
+  }
+
+  console.log(direction)
+
+  return direction
+}
