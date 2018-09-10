@@ -1,6 +1,7 @@
 var xCoor = 0
 var yCoor = 0
 var direction = ""
+var warning = "Cant make this move! Pacman will fall. Make another move"
 
 function letsPlay(){
   xCoor = 0
@@ -11,6 +12,26 @@ function letsPlay(){
   xCoor = Number(prompt("Please enter X coordinate"))
   yCoor = Number(prompt("Please enter Y coordinate"))
 
+}
+
+function move() {
+  if (direction == "north") {
+    yCoor === 5 ? alert(warning) : yCoor += 1
+  }
+
+  else if (direction == "south") {
+    yCoor === 0 ? alert(warning) : yCoor -= 1
+  }
+
+  else if (direction == "east") {
+    xCoor === 5 ? alert(warning) : xCoor += 1
+  }
+
+  else if (direction == "west") {
+    xCoor === 0 ? alert(warning) : xCoor -= 1
+  }
+
+  console.log(xCoor, yCoor, direction)
 }
 
 
