@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pacman {
+  width: 20%;
+  height:20%;
+  margin-top: 12%;
+}
+
+.pacman img {
+  width: 100%;
+  height: auto;
+}
+
+.buttons {
+  width: 50%;
+  text-align: center;
+  margin-top: 15%;
+}
+
+button  {
+  outline: none;
+  cursor: pointer;
+  padding: 1.5% 3%;
+  border-radius: 25px;
+  margin-bottom: 2%;
+}
+
+#play {
+  font-size: 20px;
+  background-color: rgb(255, 247, 0);
+}
+
+#move {
+  background-color: grey;
+  color: white;
+}
+
+#move:hover, #result:hover {
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+}
+
+#result {
+  color: white;
+  background-color: rgb(42, 195, 42);
+}
+

@@ -3,21 +3,25 @@ var yCoor = 0
 var direction = ""
 var warning = "Cant make this move! Pacman will fall. Make another move"
 
-function letsPlay(){
+function letsPlay() {
   xCoor = 0
   yCoor = 0
   direction = ""
 
-  move()
-  left()
-  move()
-  move()
-
+  console.log("starting game")
   direction = prompt("Please enter starting direction. Eg east")
   xCoor = Number(prompt("Please enter X coordinate"))
   yCoor = Number(prompt("Please enter Y coordinate"))
 
+  console.log(xCoor, yCoor, direction)
+
 }
+
+document.getElementById("play").addEventListener("click", letsPlay);
+document.getElementById("left").addEventListener("click", left);
+document.getElementById("right").addEventListener("click", right);
+document.getElementById("move").addEventListener("click", move);
+document.getElementById("result").addEventListener("click", result);
 
 function move() {
   if (direction == "north") {
@@ -38,7 +42,6 @@ function move() {
 
   console.log(xCoor, yCoor, direction)
 }
-
 
 function left() {
   if (direction == "north") {
