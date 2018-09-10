@@ -1,6 +1,6 @@
 # Basic Pac-Man :video_game:
  
-Checkout the <a href="https://github.com/Chamma89/basic-pacman">App</a>
+Checkout the <a href="https://chamma89.github.io/basic-pacman/">App</a>
 ## The Game
 * Enter the position that Pac-Man is facing. ie North, South, East or West.
 * Enter the location (X and Y coordinate) of pac-man on the grid.
